@@ -76,7 +76,7 @@
               </label>
               <div class="card-item__content">
                 <label for="cardName" class="card-item__info" ref="cardName">
-                  <div class="card-item__holder">Card Holder</div>
+                  <div class="card-item__holder">Card Holder</div> <!--name of card holder/ propriétaire de la carte-->
                   <transition name="slide-fade-up">
                     <div class="card-item__name" v-if="cardName.length" key="1">
                       <transition-group name="slide-fade-right">
@@ -91,7 +91,7 @@
                   <label for="cardMonth" class="card-item__dateItem">
                     <transition name="slide-fade-up">
                       <span v-if="cardMonth" v-bind:key="cardMonth">{{cardMonth}}</span>
-                      <span v-else key="2">MM</span>
+                      <span v-else key="2">MM</span>  <!--mois-->
                     </transition>
                   </label>
                   /
